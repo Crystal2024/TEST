@@ -10,14 +10,12 @@
                 首先使用 wifi_APConfig() 函数进行配置，若成功将创建 WIFI_Event_Group() 任务
                 WIFI_Event_Group() 任务 实现了一个类状态机的效果，响应不同的事件标志位，如wifi配置成功，重启TCP等
                 配置完毕 可以使用Wifi_Start() 和 Wifi_Stop() 函数 开启和关闭WIFI。
-                AP与sta模式切换 
-                
+
                 当有设备连上指定的TCP端口后，将开启Recive_Data()任务，接收数据。
 
                 注意：
                     1、WiFi的SSID、Password和TCP端口号 均在源文件的宏定义当中修改
                     2、当使用WiFi后 会产生两个任务，一个时间处理。
-            
     @Others:
         Data:2021/11/11
         Version:V1.0
